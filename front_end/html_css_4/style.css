@@ -162,6 +162,12 @@ td, th {
 	clear: left;
 }
 
+.titulo-principal:first-child {
+	font-weight: bold;
+}
+
+
+
 .principal {
 	padding: 3em 0;
 	background-color: #FEFEFE;
