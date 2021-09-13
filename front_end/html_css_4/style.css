@@ -162,11 +162,13 @@ td, th {
 	clear: left;
 }
 
-.titulo-principal:first-child {
-	font-weight: bold;
+.titulo-principal::before {
+	content: "[ ";
 }
 
-
+.titulo-principal::after {
+	content: " ]";
+}
 
 .principal {
 	padding: 3em 0;
@@ -230,6 +232,10 @@ td, th {
 
 .itens:first-child {
 	font-weight: bold;
+}
+
+.itens::before {
+	content: "🟊";
 }
 
 .imagembeneficios {
