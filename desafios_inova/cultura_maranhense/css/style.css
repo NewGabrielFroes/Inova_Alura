@@ -1,0 +1,38 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+header {
+    background-color: #DCF2FF;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.container img {
+    width: 30%;
+}
+
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3F528D;
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: all 1ms;
+}
+
+nav a:hover {
+    color: #A74C3C;
+}
