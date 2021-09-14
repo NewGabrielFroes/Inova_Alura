@@ -30,9 +30,32 @@ nav a {
     color: #3F528D;
     font-size: 22px;
     text-transform: uppercase;
-    transition: all 1ms;
+    transition: all 0.5s;
 }
 
 nav a:hover {
     color: #A74C3C;
+}
+
+
+
+.historia h2{
+    text-align: center;
+    font-size: 30px;
+    color: #ECBC3F;
+    font-weight: bolder;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #DCF2FF;
+}
+
+footer p {
+    color: #A74C3C;
+    font-size: 22px;
+    margin-top: 20px;
 }
