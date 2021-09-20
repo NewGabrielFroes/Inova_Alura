@@ -21,16 +21,18 @@
     <link rel="stylesheet" href="css/rodape.css">    
     <link rel="stylesheet" href="css/dialogNewsletter.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width">
+
   </head>
   <body>
 
-    <a class="pularNavegacao" href="#conteudoPrincipal">Pular para conteúdo principal</a>
+    <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
 
     <header class="cabecalho container">
-      <a href="#" class="cabecalho-logo" title="Home Apeperia">
+      <a href="https://www.google.com" class="cabecalho-logo" title="Home Apeperia">
         <svg width="205" height="59" viewBox="0 0 205 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>Logotipo da Apeperia</title>
+          <!--                    <desc>Created using Figma</desc>-->
           <g id="Canvas" transform="translate(-2230 1001)">
             <g id="Logo do Apeperia">
               <g id="Oval 1">
@@ -51,7 +53,7 @@
           </defs>
         </svg>
       </a>
-      
+
 
       <nav class="cabecalho-nav">
         <ul>
@@ -66,7 +68,6 @@
     </header>
 
     <main class="conteudo" role="main">
-
       <section class="secaoDestaque">
         <h1 class="secaoDestaque-titulo" id="conteudoPrincipal">
           APLICATIVOS NA MEDIDA
@@ -113,7 +114,7 @@
 
       <section class="secaoSobre clearfix">
         <div class="container">
-          <img src="img/sobre-apeperia.png" class="secaoSobre-imgDestaque">
+          <img src="img/sobre-apeperia.png" class="secaoSobre-imgDestaque" alt>
           <h2 class="secaoSobre-titulo tituloPadrao">
             SOBRE
           </h2>
@@ -279,20 +280,20 @@
 
           <a href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste" class="secaoDestaques-link" aria-labelledby="tituloDestaque1">
             <figure class="secaoDestaques-destaque">
-              <img src="img/comecando-criar-logotipo.png" class="secaoDestaques-destaque-img">
-              <figcaption class="secaoDestaques-destaque-titulo"  id="tituloDestaque1">
+              <img src="img/comecando-criar-logotipo.png" class="secaoDestaques-destaque-img" alt="Ferramentas de designer. Ilustração">
+              <figpcation class="secaoDestaques-destaque-titulo" id="tituloDestaque1">
                 Conheça as primeiras etapas na criação de um logotipo
-              </figcaption>
+              </figpcation>
             </figure>
           </a>
 
           <a href="http://blog.apeperia.com.br/design/dicas-como-fotografar-com-celular" class="secaoDestaques-link" aria-labelledby="tituloDestaque2">
-            <div class="secaoDestaques-destaque">
-              <img src="img/dicas-fotografia.png" class="secaoDestaques-destaque-img">
-              <p class="secaoDestaques-destaque-titulo"  id="tituloDestaque2">
+            <figure class="secaoDestaques-destaque">
+              <img src="img/dicas-fotografia.png" class="secaoDestaques-destaque-img" alt="Moça mostrando câmera para rapaz">
+              <figcaption class="secaoDestaques-destaque-titulo" id="tituloDestaque2">
                 Veja dicas de como fotografar usando seu celular
-              </p>
-            </div>
+              </figcaption>
+            </figure>
           </a>
 
           <button class="secaoDestaques-form-botao btnPadrao btnPadrao--pequeno" id="abreDialog">
@@ -339,13 +340,13 @@
             </p>
 
             <div class="contatoCampo contatoCampo--sucesso">
-              <label>Nome: </label>
-              <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
+              <label for="nome">Nome: </label>
+              <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome..." required>
             </div>  
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Email: </label>
-              <input type="email" class="contatoCampo--validouErro" required>
+              <label for="email">Email: </label>
+              <input type="email" id="email" class="contatoCampo--validouErro" placeholder="Email.." required>
               <span class="contatoCampo-msg contatoCampo-msg--erro">
                 Você quis dizer <a href="#">gmail.com?</a>
               </span>
@@ -364,22 +365,22 @@
 
             <div class="contatoCampo">
               <label>Endereço: </label>
-              <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+              <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
             </div>   
 
             <div class="contatoCampo">
               <label>Bairro: </label>
-              <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+              <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
             </div>   
 
             <div class="contatoCampo">
               <label>Cidade: </label>
-              <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+              <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
             </div>   
 
             <div class="contatoCampo">
               <label>Estado: </label>
-              <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+              <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
             </div>   
 
             <div class="contatoCampo">
@@ -425,7 +426,8 @@
             </p>
           </div>
 
-          <video src="img/formacao-java.mp4" class="secaoInstitucional-video">
+          <video src="img/formacao-java.mp4" class="secaoInstitucional-video" controls>
+            <track src="img/legenda-portugues-brasil.vtt" kind="subtitles" srclang="pt-br" label="Português (Brasil)">
           </video>
 
         </div>
