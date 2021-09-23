@@ -37,3 +37,14 @@
     flex-direction: column;*/
     flex-flow: column wrap;
 }
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin-bottom: 1%;
+}
