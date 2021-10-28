@@ -113,3 +113,13 @@ function checaCpfRepetido(cpf) {
 
     return cpfValido
 }
+
+function checaEstruturaCpf(cpf){
+    const multiplicador = 10
+
+    return checaDigitoVerificador(cpf, multiplicador)
+}
+
+function confirmaDigito(soma){
+    return 11 - (soma % 11)
+}
