@@ -1,1 +1,0 @@
-# É necessário que você execute o **brModelo.jar** com uma das versões do Diagrama_Livraria.
