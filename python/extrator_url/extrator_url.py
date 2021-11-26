@@ -43,6 +43,13 @@ class ExtratorURL:
 
         return valor
 
+    def converter_quantidade(self, moeda_origem, quantidade):
+        if moeda_origem == 'real':
+            resultado = float(quantidade) / 5.50
+        else:
+            resultado = float(quantidade) * 5.50
+        return f'{quantidade}R$ equivale a {resultado:.2f}$'
+
     def __len__(self):
         return len(self.url)
 
@@ -55,8 +62,13 @@ class ExtratorURL:
 url = "bytebank.com/cambio?moedaDestino=dolar&quantidade=100&moedaOrigem=real"
 extrator_url = ExtratorURL(url)
 extrator_url_2 = ExtratorURL(url)
-valor_quantidade = extrator_url.get_valor_parametro("moedaOrigem")
-print(valor_quantidade)
+moeda_origem = extrator_url.get_valor_parametro("moedaOrigem")
+moeda_destino = extrator_url.get_valor_parametro("moedaDestino")
+quantidade = extrator_url.get_valor_parametro("quantidade")
+
+quantidade_convertidada = extrator_url.converter_quantidade(moeda_origem, quantidade)
+print(quantidade_convertidada)
+print(moeda_origem)
 print("O tamanho da URL é :", len(extrator_url))
 
 print(id(extrator_url))
