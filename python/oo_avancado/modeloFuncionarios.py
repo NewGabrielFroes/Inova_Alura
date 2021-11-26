@@ -35,9 +35,6 @@ class Pleno(Alura, Caelum):
 class Senior(Alura, Caelum, Hipster):
     pass
 
-
-
-
 jose = Junior('José')
 jose.busca_perguntas_sem_resposta()
 
