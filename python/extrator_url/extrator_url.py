@@ -67,6 +67,7 @@ moeda_destino = extrator_url.get_valor_parametro("moedaDestino")
 quantidade = extrator_url.get_valor_parametro("quantidade")
 
 quantidade_convertidada = extrator_url.converter_quantidade(moeda_origem, quantidade)
+
 print(quantidade_convertidada)
 print(moeda_origem)
 print("O tamanho da URL é :", len(extrator_url))
