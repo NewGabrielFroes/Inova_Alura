@@ -1,7 +1,10 @@
-from cpf_cnpj import Documento
+from TelefoneBr import TelefoneBr
 
-exemplo_cpf = "15316264754"
-exemplo_cnpj = "35379838000112"
+telefone = "551193734043"
+telefone_objeto = TelefoneBr(telefone)
 
-documento = Documento.cria_documento(exemplo_cpf)
-print(documento.valida())
+#padrao = "([0-9]{2,3})?([0-9]{2})(9)?([0-9]{4})([0-9]{4})"
+#resposta = re.search(padrao,telefone)
+#print(resposta.group())
+
+print(telefone_objeto)
