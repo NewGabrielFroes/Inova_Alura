@@ -1,6 +1,5 @@
-from dominio import Usuario, Lance, Leilao
 from unittest import TestCase
-
+from testes_automatizados.src.dominio import Usuario, Lance, Leilao
 
 
 class TestAvaliador(TestCase):
